@@ -1,0 +1,22 @@
+To deploy webapi1
+=====================
+docker build -t ovaismehboob/acawebapi1:latest . 
+docker push ovaismehboob/acawebapi1:latest
+
+az containerapp create --name acawebapi1 --resource-group demorg --environment acaenv --image ovaismehboob/acawebapi1:latest --target-port 443 --ingress external --min-replicas 1 --max-replicas 1 
+
+To deploy webapi2
+=====================
+docker build -t ovaismehboob/acawebapi2:latest
+docker push ovaismehboob/acawebapi2:latest 
+
+az containerapp create --name acawebapi2 --resource-group demorg --environment acaenv --image ovaismehboob/acawebapi2:latest --target-port 443 --ingress external --min-replicas 1 --max-replicas 1 
+
+To deploy web ui
+=====================
+docker build -t ovaismehboob/acawebui:latest
+docker push ovaismehboob/acawebui:latest 
+
+az containerapp create --name acawebui --resource-group demorg --environment acaenv --image ovaismehboob/acawebui:latest --target-port 443 --ingress external --min-replicas 1 --max-replicas 1 
+
+

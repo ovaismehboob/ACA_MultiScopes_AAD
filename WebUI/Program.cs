@@ -4,19 +4,20 @@ using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.UI;
+using Microsoft.AspNetCore.HttpOverrides;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var initialScopes = builder.Configuration["DownstreamApi:Scopes"]?.Split(' ');
+//var initialScopes = builder.Configuration["DownstreamApi:Scopes"]?.Split(' ');
 
 builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
     .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"))
-        .EnableTokenAcquisitionToCallDownstreamApi(initialScopes)
+        .EnableTokenAcquisitionToCallDownstreamApi()
             .AddDownstreamWebApi("API1", builder.Configuration.GetSection("API1"))
             .AddDownstreamWebApi("API2", builder.Configuration.GetSection("API2"))
             .AddInMemoryTokenCaches();
-
+        
 builder.Services.AddControllersWithViews(options =>
 {
     var policy = new AuthorizationPolicyBuilder()
@@ -24,6 +25,7 @@ builder.Services.AddControllersWithViews(options =>
         .Build();
     options.Filters.Add(new AuthorizeFilter(policy));
 });
+
 builder.Services.AddRazorPages()
     .AddMicrosoftIdentityUI();
 
@@ -39,14 +41,10 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
-
 app.Run();
