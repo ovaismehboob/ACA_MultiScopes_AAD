@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FZxHPAH1t4APHKXunFT6Jm475bp8MDFkI0QDfB7AQSmXTttQaNJaZ81JuyJTDCavwrRncswc6hWqPRVywk/rFA==",
+  "dgSpecHash": "PC6rbqbS6xmD3FczhRLeskf5dZRo2urFyKcwiuxTONnWulBFxDPh5Hukc98MmQkc+A9CWQ3kCUtf5sFB3UXpvg==",
   "success": true,
-  "projectFilePath": "C:\\engagements\\adia\\dapr\\scopesexample\\webui\\WebUI.csproj",
+  "projectFilePath": "C:\\Engagements\\ADIA\\Dapr\\scopesexample\\webui\\WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ovmehboo\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\ovmehboo\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

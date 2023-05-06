@@ -13,7 +13,8 @@ var initialScopes = builder.Configuration["DownstreamApi:Scopes"]?.Split(' ');
 builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
     .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"))
         .EnableTokenAcquisitionToCallDownstreamApi(initialScopes)
-            .AddDownstreamWebApi("DownstreamApi", builder.Configuration.GetSection("DownstreamApi"))
+            .AddDownstreamWebApi("API1", builder.Configuration.GetSection("API1"))
+            .AddDownstreamWebApi("API2", builder.Configuration.GetSection("API2"))
             .AddInMemoryTokenCaches();
 
 builder.Services.AddControllersWithViews(options =>
