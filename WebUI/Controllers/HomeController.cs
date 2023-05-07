@@ -17,12 +17,12 @@ public class HomeController : Controller
     public HomeController(ILogger<HomeController> logger,
                             IDownstreamWebApi downstreamWebApi)
     {
-            _logger = logger;
+        _logger = logger;
         _downstreamWebApi = downstreamWebApi;
     }
 
     [AuthorizeForScopes(ScopeKeySection = "API1:Scopes")]
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> FirstAPI()
     {
         using var response = await _downstreamWebApi.CallWebApiForUserAsync("API1").ConfigureAwait(false);
         if (response.StatusCode == System.Net.HttpStatusCode.OK)
@@ -39,7 +39,7 @@ public class HomeController : Controller
     }
 
     [AuthorizeForScopes(ScopeKeySection = "API2:Scopes")]
-    public async Task<IActionResult> Privacy()
+    public async Task<IActionResult> SecondAPI()
     {
         using var response = await _downstreamWebApi.CallWebApiForUserAsync("API2").ConfigureAwait(false);
         if (response.StatusCode == System.Net.HttpStatusCode.OK)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Engagements\\ADIA\\Dapr\\scopesexample\\webapi2\\WebAPI2.csproj": {}
+    "C:\\engagements\\adia\\dapr\\scopesexample\\webapi2\\WebAPI2.csproj": {}
   },
   "projects": {
-    "C:\\Engagements\\ADIA\\Dapr\\scopesexample\\webapi2\\WebAPI2.csproj": {
+    "C:\\engagements\\adia\\dapr\\scopesexample\\webapi2\\WebAPI2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Engagements\\ADIA\\Dapr\\scopesexample\\webapi2\\WebAPI2.csproj",
+        "projectUniqueName": "C:\\engagements\\adia\\dapr\\scopesexample\\webapi2\\WebAPI2.csproj",
         "projectName": "WebAPI2",
-        "projectPath": "C:\\Engagements\\ADIA\\Dapr\\scopesexample\\webapi2\\WebAPI2.csproj",
+        "projectPath": "C:\\engagements\\adia\\dapr\\scopesexample\\webapi2\\WebAPI2.csproj",
         "packagesPath": "C:\\Users\\ovmehboo\\.nuget\\packages\\",
-        "outputPath": "C:\\Engagements\\ADIA\\Dapr\\scopesexample\\webapi2\\obj\\",
+        "outputPath": "C:\\engagements\\adia\\dapr\\scopesexample\\webapi2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ovmehboo\\AppData\\Roaming\\NuGet\\NuGet.Config",

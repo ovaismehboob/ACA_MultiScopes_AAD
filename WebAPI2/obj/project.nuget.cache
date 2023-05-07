@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NgrYKRHoVxNzvPu/qGIDAhCLXc3XCKsz7lL+k2KYksMYkqmIdm/JetrK/4ZMMD2C2rYlr1ZFL/VgnSCDVKvsBw==",
+  "dgSpecHash": "/DIXaPcZtADkfOb9SKCp0fI1r7vqU5a1wQUfxuZQhtQ0efnI22ZpsCpqc4ddAL/SzN2CbXJKZLQVrfWBvHL+pg==",
   "success": true,
-  "projectFilePath": "C:\\Engagements\\ADIA\\Dapr\\scopesexample\\webapi2\\WebAPI2.csproj",
+  "projectFilePath": "C:\\engagements\\adia\\dapr\\scopesexample\\webapi2\\WebAPI2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ovmehboo\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\ovmehboo\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

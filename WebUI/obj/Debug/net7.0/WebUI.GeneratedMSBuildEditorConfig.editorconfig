@@ -16,12 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\engagements\adia\dapr\scopesexample\webui
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/engagements/adia/dapr/scopesexample/webui/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/engagements/adia/dapr/scopesexample/webui/Views/Home/FirstAPI.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaXJzdEFQSS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/engagements/adia/dapr/scopesexample/webui/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/engagements/adia/dapr/scopesexample/webui/Views/Home/SecondAPI.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWNvbmRBUEkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/engagements/adia/dapr/scopesexample/webui/Views/Shared/Error.cshtml]
