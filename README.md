@@ -1,4 +1,4 @@
-# Using Multiple Scopes in AAD to authorize requests between differnet APIs hosted on Azure Container Apps 
+# Using Multiple Scopes in AAD to authorize requests between different APIs hosted on Azure Container Apps 
 
 This repository contains code for a sample application to implement the following scenario:
 
